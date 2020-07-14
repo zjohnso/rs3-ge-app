@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundDark">
+
+    <ImageView
+        android:id="@+id/thumbnail2"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="2dp"
+        android:background="@color/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lvDataLabels"/>
+
+    <ImageView
+        android:id="@+id/lvBackground2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@color/background"
+        app:layout_constraintTop_toTopOf="@id/thumbnail2"
+        app:layout_constraintStart_toEndOf="@+id/thumbnail2"
+        app:layout_constraintBottom_toBottomOf="@id/thumbnail2"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/expandButton"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/ic_expand"
+        android:layout_marginEnd="8dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="@id/lvBackground2"
+        app:layout_constraintTop_toTopOf="@id/lvBackground2"
+        app:layout_constraintBottom_toBottomOf="@id/lvBackground2"/>
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/lvBackground2"
+        app:layout_constraintEnd_toStartOf="@id/expandButton"
+        app:layout_constraintStart_toStartOf="@+id/lvBackground2"
+        app:layout_constraintTop_toTopOf="@id/lvBackground2" />
+
+    <TextView
+        android:id="@+id/lvDataLabels"
+        android:layout_width="0dp"
+        android:layout_height="92dp"
+        android:textAlignment="viewStart"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/text"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="2dp"
+        android:background="@color/background"
+        android:lineHeight="20dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/lvBackground2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/lvDataViews"/>
+
+    <TextView
+        android:id="@+id/lvDataViews"
+        android:layout_width="0dp"
+        android:layout_height="92dp"
+        android:textAlignment="viewEnd"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/text"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@color/background"
+        android:lineHeight="20dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/lvBackground2"
+        app:layout_constraintStart_toEndOf="@id/lvDataLabels"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

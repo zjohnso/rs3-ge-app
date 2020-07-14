@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slayerListName"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:paddingStart="8dp"
+    android:textColor="@color/text"
+    android:textSize="14sp"
+    android:singleLine="true"
+    android:background="@color/background"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent" />

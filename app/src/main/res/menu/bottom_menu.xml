@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/market"
+        android:icon="@drawable/ic_market"
+        android:title="Market" />
+
+    <item
+        android:id="@+id/favorites"
+        android:icon="@drawable/ic_favorites"
+        android:title="Favorites" />
+
+    <item
+        android:id="@+id/bestiary"
+        android:icon="@drawable/ic_bestiary"
+        android:title="Bestiary" />
+
+    <item
+        android:id="@+id/characterLookup"
+        android:icon="@drawable/ic_char_lookup"
+        android:title="Character Lookup" />
+
+    <item
+        android:id="@+id/character"
+        android:icon="@drawable/ic_character"
+        android:title="Character" />
+
+</menu>

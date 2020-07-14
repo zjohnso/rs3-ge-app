@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProjectScape</string>
+    <string name="loading">Loading...</string>
+    <string name="iconDesc">icon</string>
+    <string name="item_info_backdrop">item info backdrop</string>
+    <string name="price_over_time_by_day">Price Over Time (By Day)</string>
+</resources>

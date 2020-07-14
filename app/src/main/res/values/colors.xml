@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9f0000</color>
+    <color name="colorPrimaryDark">#9f0000</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="background">#333333</color>
+    <color name="backgroundDark">#222222</color>
+    <color name="text">#ffffff</color>
+    <color name="divider">#aaaaaa</color>
+    <color name="chartGrid">#aaaaaa</color>
+    <color name="chartValues">#77dd77</color>
+    <color name="favoriteColor">#ff6961</color>
+    <color name="membersColor">#ffd96c</color>
+</resources>

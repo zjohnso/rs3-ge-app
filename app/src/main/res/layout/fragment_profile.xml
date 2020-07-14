@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pName"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/background"
+        android:textColor="@color/text"
+        android:gravity="center_vertical"
+        android:textSize="24sp"
+        android:layout_marginEnd="2dp"
+        android:paddingStart="16dp"
+        android:singleLine="true"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/pCombatLevel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pCombatLabel"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:background="@color/background"
+        android:textColor="@color/text"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:text="Skills"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        android:paddingStart="82dp"
+        app:layout_constraintTop_toBottomOf="@id/pDivider"
+        app:layout_constraintEnd_toStartOf="@id/pOverallSkillLevel"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/pOverallSkillLevel"
+        android:layout_width="82dp"
+        android:layout_height="44dp"
+        android:background="@color/background"
+        android:textColor="@color/text"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintTop_toBottomOf="@id/pDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/pCombatLabel"/>
+
+    <TextView
+        android:id="@+id/pCombatLevel"
+        android:layout_width="86dp"
+        android:layout_height="56dp"
+        android:background="@color/background"
+        android:textColor="@color/text"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:singleLine="true"
+        android:paddingEnd="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/pName" />
+
+    <ImageView
+        android:id="@+id/pDivider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/skillLabel1"
+        android:layout_width="102dp"
+        android:layout_height="172dp"
+        android:textSize="14sp"
+        android:lineHeight="20dp"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/background"
+        android:textColor="@color/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pCombatLabel"
+        app:layout_constraintEnd_toStartOf="@id/skillView1"/>
+
+    <TextView
+        android:id="@+id/skillView1"
+        android:layout_width="0dp"
+        android:layout_height="172dp"
+        android:textSize="14sp"
+        android:lineHeight="20dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/background"
+        android:textColor="@color/text"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toEndOf="@+id/skillLabel1"
+        app:layout_constraintTop_toBottomOf="@id/pCombatLabel"
+        app:layout_constraintEnd_toStartOf="@id/skillLabel2"/>
+
+    <TextView
+        android:id="@+id/skillLabel2"
+        android:layout_width="102dp"
+        android:layout_height="172dp"
+        android:textSize="14sp"
+        android:lineHeight="20dp"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/background"
+        android:textColor="@color/text"
+        app:layout_constraintStart_toEndOf="@+id/skillView1"
+        app:layout_constraintTop_toBottomOf="@id/pCombatLabel"
+        app:layout_constraintEnd_toStartOf="@id/skillView2"/>
+
+    <TextView
+        android:id="@+id/skillView2"
+        android:layout_width="0dp"
+        android:layout_height="172dp"
+        android:textSize="14sp"
+        android:lineHeight="20dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/background"
+        android:textColor="@color/text"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toEndOf="@+id/skillLabel2"
+        app:layout_constraintTop_toBottomOf="@id/pCombatLabel"
+        app:layout_constraintEnd_toStartOf="@id/skillLabel3"/>
+
+    <TextView
+        android:id="@+id/skillLabel3"
+        android:layout_width="102dp"
+        android:layout_height="172dp"
+        android:textSize="14sp"
+        android:lineHeight="20dp"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/background"
+        android:textColor="@color/text"
+        app:layout_constraintStart_toEndOf="@+id/skillView2"
+        app:layout_constraintTop_toBottomOf="@id/pCombatLabel"
+        app:layout_constraintEnd_toStartOf="@id/skillView3"/>
+
+    <TextView
+        android:id="@+id/skillView3"
+        android:layout_width="0dp"
+        android:layout_height="172dp"
+        android:textSize="14sp"
+        android:lineHeight="20dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/background"
+        android:textColor="@color/text"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toEndOf="@+id/skillLabel3"
+        app:layout_constraintTop_toBottomOf="@id/pCombatLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
